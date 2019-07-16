@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>অধিকার আমার, অধিকার তোমার, অধিকার সবার।</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style type="text/css">
+    .navbar{
+      background: #1C2331;
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="img/slogo.png" width="20px" alt="">
+          <strong>অধিকার</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+  
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html">Blog
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html">Forum</a>
+            </li>
+          </ul>
+  
+  
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/" class="nav-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/" class="nav-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li style="margin-top: 5px; margin-left: 6px;">
+              <img src="img/un.webp" width="35px" alt="logo">
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </nav>
+    <main class="pt-5" id="app"> 
+      <div class="container">
+        <div class="jumbotron text-center" style="background-image: url('img/3.jpg') ">
+          <h1>অধিকার ব্লগ</h1>
+        </div>
+        <section class="mt-5 wow fadeIn">
+          
+          <div class="row">
+            <div class="col-md-9" >
+              <div v-for="post in posts">
+                <div class="card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="view overlay">
+                        <img src="img/2.png" class="card-img-top" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                          <h4 class="card-title">{{post.title}}</h4>
+                          <p class="card-text">অর্থহীন লেখা যার মাঝে আছে অনেক কিছু। হ্যাঁ, এই লেখার মাঝেই আছে অনেক কিছু। যদি তুমি মনে করো, এটা তোমার
+                            কাজে লাগবে।...
+                          </p>
+                          
+                          <a href="/" class="btn aqua-gradient waves-effect waves-light">Read More</a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <hr class="mt-1">
+              </div>
+              <nav class="d-flex justify-content-center my-5">
+                  <ul class="pagination pg-blue mb-0">
+        
+                    <!--First-->
+                    <li class="page-item disabled">
+                      <a class="page-link waves-effect waves-effect">First</a>
+                    </li>
+        
+                    <!--Arrow left-->
+                    <li class="page-item disabled">
+                      <a class="page-link waves-effect waves-effect" aria-label="Previous">
+                        <span aria-hidden="true">«</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+        
+                    <!--Numbers-->
+                    <li class="page-item active">
+                      <a class="page-link waves-effect waves-effect">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link waves-effect waves-effect">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link waves-effect waves-effect">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link waves-effect waves-effect">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link waves-effect waves-effect">5</a>
+                    </li>
+        
+                    <!--Arrow right-->
+                    <li class="page-item">
+                      <a class="page-link waves-effect waves-effect" aria-label="Next">
+                        <span aria-hidden="true">»</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+        
+                    <!--Last-->
+                    <li class="page-item">
+                      <a class="page-link waves-effect waves-effect">Last</a>
+                    </li>
+        
+                  </ul>
+                </nav>
+            </div>
+            <!-- <div class="col-md-2"></div> -->
+            <div class="col-md-3">
+              <img class="img-responsive" width="100%" height="auto" src="img/hotline.png" alt="hot number">
+              
+              <form class="mt-3 px-2 py-2 bg-light" >
+                <h5 class="text-center">আজকের ভোট</h5>
+                <hr>
+                <h6>আমরা কোনটিকে বেশি অগ্রাধিকার দিব?</h6>
+                <div class="ml-4">
+                  <fieldset class="form-check">
+                      <input type="radio" class="form-check-input">
+                      <label for="vote">শিক্ষা</label>
+                  </fieldset>
+                    <fieldset class="form-check">
+                      <input type="radio" class="form-check-input">
+                      <label for="vote">নিরাপত্তা</label>
+                  </fieldset>
+                    <fieldset class="form-check" >
+                      <input type="radio" class="form-check-input">
+                      <label for="vote">সেবা</label>
+                  </fieldset>
+                </div>
+                <button class="btn btn-outline-primary btn-block">Vote</button>
+                
+              </form>
+            </div>
+              
+          </div>
+          
+        </section>
+        
+      </div>
+    </main>
+
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+        <div class="pt-4">
+          <img src="img/unhrc.jpg" width="150px" alt=""> &nbsp;&nbsp;
+          <img src="img/un.webp" width="70px" alt=""> &nbsp;&nbsp;
+          <img src="img/nhrc.png" width="55px" alt=""> &nbsp;&nbsp;
+          <img src="img/hrd.jpg" width="130px" alt="">
+        </div>
+        <hr class="my-4">
+        <div class="pb-4">
+          <a href="/" target="_blank">
+            <i class="fab fa-facebook-f mr-3"></i>
+          </a>
+    
+          <a href="/" target="_blank">
+            <i class="fab fa-twitter mr-3"></i>
+          </a>
+    
+          <a href="/" target="_blank">
+            <i class="fab fa-youtube mr-3"></i>
+          </a>
+    
+          <a href="/" target="_blank">
+            <i class="fab fa-google-plus-g mr-3"></i>
+          </a>
+    
+          <a href="/" target="_blank">
+            <i class="fab fa-pinterest mr-3"></i>
+          </a>
+    
+          <a href="/">
+            <i class="fab fa-linkedin mr-3"></i>
+          </a>
+    
+          <a href="/">
+            <i class="fab fa-tumblr mr-3"></i>
+          </a>
+        </div>
+    
+        <div class="footer-copyright py-3">
+          © 2019 Copyright:
+          <a href="/"> odhikar.com </a>
+        </div>
+      </footer>
+    
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script type="text/javascript">
+        $('document').ready(function () {
+          new WOW().init();
+          var app = new Vue({
+            el: '#app',
+            data: {
+              posts:[
+                {title:'শিশুরা দেশের ভবিষৎ', img:'', body:''},
+                {title:'সবার জন্য অধিকার', img:'', body:''},
+                {title:'অধিকার রক্ষা ও দেওয়া দায়িত্ব', img:'', body:''}
+              ]
+            }
+          })
+        })
+      </script>
+  </body>
+  </html>

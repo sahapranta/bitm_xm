@@ -14,14 +14,12 @@
 
 <body>
   <div class="preloader">
-      
-    
     <div class="d-flex justify-content-center">
-        <img src="logo.png" class="img-fluid" style="position:absolute; top: 20px;" alt="">
-                         
+        <img src="logo.png" class="img-fluid" alt="">
+        <div id="progress"></div>                         
       </div>
   </div>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <nav class="navbar navbar-l fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="/">
         <img src="img/slogo.png" width="20px" alt="">
@@ -502,6 +500,9 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript">
     $('document').ready(function () {
+      $('#progress').on('animationend', ()=>{
+        $('.preloader').fadeOut();
+      })
       new WOW().init();
     })
   </script>

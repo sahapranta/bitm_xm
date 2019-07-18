@@ -17,8 +17,13 @@ body,
   }
 
 .navbar {
+  background: #1C2331;
+ }
+.navbar-l {
   background-color: rgba(0, 0, 0, 0.2);
  }
+
+ 
 
 .top-nav-collapse {
   background-color: #1C2331;
@@ -46,12 +51,38 @@ body,
   animation: scale 3000ms ease-in-out forwards;
   width: 100px;
   height: auto;
-  margin-top: 40px;
+  top: 28%;
+  position: absolute;
+}
+
+#progress {
+  background: #d6d6d6;
+  border-radius: 13px;
+  height: 13px;
+  width: 65vh;
+  padding: 3px;
+  position: absolute;
+  top:60%;
+}
+
+#progress:after {
+  content: '';
+  display: block;
+  background: #fa2c08;
+  width: 10%;
+  height: 100%;
+  border-radius: 9px;
+  animation: progress 3500ms linear;
 }
 
 @keyframes scale{
   to{
-    transform:scale(1.5);
+    transform:scale(1.6);
+  }
+}
+@keyframes progress{
+  to{
+    width: 100%;
   }
 }
 
